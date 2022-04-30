@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: rgba(19, 139, 65, 0.801);
+}
+
+h2 {
+    color: rgba(19, 139, 65, 0.801);
+}
+
+#principal {
+    color: red;
+    text-align: center;
+}
+div {
+    background-color: green;
+    display: inline;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div:hover {
+    background-color: aquamarine;
+}

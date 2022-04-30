@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>abra essas imagens em dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem-media.png" type="image/png">
+        <img src="imagem-grande.png" alt="imagem flexivel">
+
+    </picture>
+    <h1>reprodução de audios</h1>
+    <p>caso não reproduza está musica baixe clicando <a download="midia/lofimassa.mp3" href="midia/lofimassa.mp3">aqui</a></p>
+<h1>reprodução de videos</h1>
+<h1>Também podemos incorporar videos de outros sites</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7WR3MgDnVFM" autoplay frameborder="0" allowfullscreen></iframe>
+</body>
+</html>

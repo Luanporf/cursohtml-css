@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'matrix';
+  src: url('fonte/ringmatrix.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin:0;
+}
+body {
+  font-family: 'matrix';
+  background-color: rgba(0, 0, 0, 0.932)
+
+  
+
+}
+main {
+  background-color: black;
+  box-shadow: 2px 2px 6px #02351296;
+  width: 900px;
+  padding: 10px;
+  margin: auto;
+  text-align: left;
+}
+.blackbartop {
+  background-color: #333333;
+  height: 50px;
+}
+.blackbartop1 {
+  background-color: black;
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+
+.selection{
+  text-align: right;
+  font-size: 15px;
+}
+
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .progressbar{
+    --progress: 50;
+    width: 600px;
+    height: 20px;
+    background-color: #013300;
+    display: flex;
+
+  }
+  
+  .progressbar::before{
+    content: "";
+    width: calc(var(--progress) * 0.8%);
+    background-color: #32bc21;
+  }
+  .progressbar1{
+    --progress: 50;
+    width: 600px;
+    height: 20px;
+    background-color: #013300;
+    display: flex;
+  }
+  
+  .progressbar1::before{
+    content: "";
+    width: calc(var(--progress) * 0.3%);
+    background-color: #32bc21;
+  }
+  .progressbar2{
+    --progress: 50;
+    width: 600px;
+    height: 20px;
+    background-color: #013300;
+    display: flex;
+  }
+  
+  .progressbar2::before{
+    content: "";
+    width: calc(var(--progress) * 0.05%);
+    background-color: #32bc21;
+    
+  }
+
+  .prompt {
+    text-align: left;
+    font-size: 10px;
+    color:white
+  }
+  
+
+  h1 {
+      text-align: center;
+      font-family: 'matrix', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      font-weight: normal;
+
+
+  }
+  h2 {
+      text-align: center;
+      font-family: 'matrix', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+  }
+  p {
+      text-align: justify;
+      font-family: 'matrix', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: white
+      
+  }
+  li{
+    color: white;
+    font-family: 'matrix', Geneva, Tahoma, sans-serif;
+    
+
+  }
+  a {
+      color: whitesmoke;
+  }
+  .color {
+    color: white;
+  }
+  
+  .desenvolvimento {
+    text-align: right;
+  }
+  strong {
+    color: #127701;
+  }
+
