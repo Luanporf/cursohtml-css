@@ -38,7 +38,7 @@ header > p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.459) 0.1em 0.1em 0.2em;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -113,21 +113,23 @@ strong {
 }
 
 
-.video {
-    padding: 10px;
-    width: 50%;
-    height: 100%;
-    margin: auto;
+div.video {
+    padding: 20px;
+    padding-bottom: 59%;
     background-color: #1A5F38;
     box-shadow: 0px 6px 11px -3px #000000;
+    position: relative;
+    margin: 0px -20px 30px -20px;
+
     
 }
 
-iframe {
-    height: 500px;
-    width: 800px;
-    display: block;
-    margin: auto;
+div.video > iframe {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
 }
 
 
