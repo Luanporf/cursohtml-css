@@ -1,0 +1,21 @@
+body {
+    color: #ADDCCF;
+    background-color: #192617;
+    font-family: Arial;
+    font-weight: 100;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    color: #4AD4AE;
+}
+
+h1 {
+    background-color: #4ad4ad73;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 3px 1px 3px 1px rgba(0, 0, 0, 0.445);
+}
