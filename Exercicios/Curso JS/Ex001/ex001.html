@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro Codigo Js</title>
+    <style>
+        body {
+            font:normal 20pt arial;
+            color: blueviolet;
+            text-align: center;
+            background-color: black;
+        }
+
+        .data {
+            background-color: white;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
-    <h1>olá mundo</h1>
-    <script>
-
+    <script class = data>
+        var nome = window.prompt ('Digite seu nome aqui')
+        var n1 = window.prompt ('Digite seu salário')
+        document.write (`olá, <strong>${nome}</strong>, seu nome tem ${nome.length} letras</br>`)
+        document.write (`seu nome em minúsculas é ${nome.toLowerCase()}</br>`)
+        document.write (`seu salário é de ${n1}`)
     </script>
 </body>
 </html>
