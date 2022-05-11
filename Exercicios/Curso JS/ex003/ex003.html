@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando DOM</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.705);
+            color: rgb(66, 248, 163);
+            text-align: center;
+            font: normal 20pt arial
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a utilizar o DOM</h1>
+    <p>Teste de javascript DOM</p>
+    <p>Resultado</p>
+    <div id="mensagem">clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var d = document.getElementById ('mensagem')
+        document.write('esse aqui é o primeiro paragráfo: ' + p1.innerText )
+        document.write ('</br> essa aqui é a id: ' + d.innerText)
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.705);
+            color: rgb(66, 248, 163);
+            text-align: center;
+            font: normal 20pt arial;
+            margin: 0px;
+            line-height: 300px;
+        }
+
+        div#clique {
+            background-color: darkgrey;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left:50%;
+            top: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="clique">Clique aqui</div>
+    <script>
+        var area = document.getElementById('clique')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar() {
+            area.innerText = 'clicou!'
+            area.style.backgroundColor = 'darkgray'
+        }
+        function entrar() {
+            area.innerText = 'entrou!'
+            area.style.backgroundColor = 'black'
+
+        }
+        function sair () {
+            area.innerHTML = 'saiu!'
+            area.style.backgroundColor = 'darkgrey'
+        }
+    </script>
+</body>
+</html>
