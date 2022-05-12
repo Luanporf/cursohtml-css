@@ -5,23 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo exemplo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bcgr1">
+        <p class="p1">lightmode</p>
+        <input type="checkbox" name="lightmode">
     <h1>Calculadora</h1>
-    <input type="number" name="txt1" id="txt1">
-    <input type="number" name="txt2" id="txt2">
-    <input type="button" value="somar" onclick="somar()">
-    <p id="res">resultado:</p>
+    <div class="bx">
+    <input class="bx1" type="" name="txt1" id="txt1">
+    <input class="bx1" type="" name="txt2" id="txt2">
+    </div>
+    <div class="operadores">
+    <input class="butao" type="button" value="+" onclick="somar()">
+    <input class="butao" type="button" value="x" onclick="multiplicar()">
+    <input class="butao" type="button" value="/" onclick="dividir()">
+    <input class="butao" type="button" value="-" onclick="subtrair()">
+    </div>
+    <br>
+    <div class="input">
+    <p>resultado:</p>
+    <p id="res"></p>
+    </div>
+    </div> 
     <script>
+
+        var box1 = document.getElementById('txt1')
+        var box2 = document.getElementById('txt2')
+        var resultado = document.getElementById('res')
         function somar(){
-            var box1 = document.getElementById('txt1')
-            var box2 = document.getElementById('txt2')
-            var resultado = document.getElementById('res')
             var n1 = Number(box1.value)
             var n2 = Number(box2.value)
             var s = n1 + n2
             resultado.innerHTML = s
         }
+        function multiplicar() {
+            var m1 = Number(box1.value)
+            var m2 = Number(box2.value)
+            var s = m1 * m2
+            resultado.innerHTML = s
+        }
+        function dividir() {
+            var d1 = Number(box1.value)
+            var d2 = Number(box2.value)
+            var s = d1 / d2
+            resultado.innerHTML = s
+        }
+        function subtrair() {
+            var s1 = Number(box1.value)
+            var s2 = Number(box2.value)
+            var s = s1 - s2
+            resultado.innerHTML = s
+        }
+
     </script>    
 </body>
 </html>
