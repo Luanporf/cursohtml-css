@@ -16,10 +16,11 @@
             var texto = document.getElementById('txt1')
             var resultado = document.getElementById('verify')
             var resposta = document.getElementById ('res')
-            if (texto != 'brasileiro') {
+            
+            if (texto == 'brasileiro') {
                 resposta.innerHTML = 'Você é <strong>brasileiro</strong>, seja bem-vindo!'
             } else {
-                resposta.innerHTML = 'Você não é brasileiro >:('
+                resposta.innerHTML = "Você não é brasileiro"
             }
         }
         
