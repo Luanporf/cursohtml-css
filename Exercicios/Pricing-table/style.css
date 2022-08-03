@@ -146,7 +146,8 @@ button {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button2 {
@@ -185,6 +186,7 @@ button {
     width: 94px;
     border: none;
     display: inline-block;
+    cursor:pointer;
 }
 
 .button3 {
